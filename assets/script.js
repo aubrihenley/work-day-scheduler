@@ -11,3 +11,5 @@ function setTime() {
     }
     setTime();
     
+  //update local storage when save is clicked then get local storage to place in page
+  //change color in the html add/remove classes in css
