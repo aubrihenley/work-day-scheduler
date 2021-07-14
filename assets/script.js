@@ -16,15 +16,28 @@ function setTime() {
   function displayColors() {
 
     var currentTime = moment().format("H");
-    var taskTime = element.getAttribute("data-time")
+    console.log(currentTime);
 
-    if (currentTime === taskTime ){
-      
-    }
+    // var taskTime = $(this)  navigate to get to the data time attribut
+
+//change time to integer, get data-time attribute 
+  
+
+
+    $( "input" ).each(function() {
+    $(this.parent).css("backgroundColor", "blue");
+    });
+
 
   }
+displayColors();
 
-  // Loop through all h4 elements to add styling 
-for (var i = 0; i < input.length; i++) {
 
-}
+  //   if (currentTime === taskTime ){
+
+  //   }
+
+  // }
+
+//   // Loop through all h4 elements to add styling 
+// for (var i = 0; i < input.length; i++)
