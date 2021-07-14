@@ -11,33 +11,34 @@ function setTime() {
     }
     setTime();
     
+   
   //update local storage when save is clicked then get local storage to place in page
   //change color in the html add/remove classes in css
   function displayColors() {
 
-    var currentTime = moment().format("H");
-    console.log(currentTime);
-
-    // var taskTime = $(this)  navigate to get to the data time attribut
+// get current time in 24 hour format
+    var currentTime = moment().hours();
 
 //change time to integer, get data-time attribute 
-  
+    $( "textarea").each(function() {
+      var taskTime = parseInt($(this.parent).data("time"));
+console.log(taskTime);
 
+    if (currentTime === taskTime) { 
+        $(this).addClass("present");
 
-    $( "input" ).each(function() {
-    $(this.parent).css("backgroundColor", "blue");
-    });
+    } else if (currentTime < taskTime) {
+ 
+        $(this).addClass("past");
 
+    } else if (currentTime > taskTime) {
+
+    $(this).addClass("future");
+    }});
+
+// $( "textarea" ).each(function() {
+//   $(this).css("backgroundColor", "blue");
+//   });
 
   }
 displayColors();
-
-
-  //   if (currentTime === taskTime ){
-
-  //   }
-
-  // }
-
-//   // Loop through all h4 elements to add styling 
-// for (var i = 0; i < input.length; i++)

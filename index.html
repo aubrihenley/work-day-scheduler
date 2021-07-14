@@ -33,108 +33,92 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col">Time</th>
-            <th scope="col">Task</th>
-           
+            <th class="description" scope="col">Time</th>
+            <th class="description" scope="col">Task</th>
+            <th class="description" scope="col">Save</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th data-time= "9" scope="row">9am</th>
+          <tr class="hour" id="time-9" data-time= 9>
+            <th class="time-block" scope="row">9am</th>
             <td class="">
-              <textarea type="text" class="form-control" id="time-9" aria-label= "User's Task"></textarea>
-            </td>
+              <textarea type="text" class="form-control"></textarea>
+            </td> 
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2 nineA"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2 nineA"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
           <tr>
-            <th data-time= "10" scope="row">10am</th>
-            <td>
-              <textarea type="text" class="form-control" id="time-10" aria-label= "User's Task"></textarea>
+            <th class="time-block" scope="row">10am</th>
+            <td class="hour" id="time-10" data-time= 10>
+              <textarea type="text" class="form-control"></textarea>
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2 "><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2 "><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "11"  scope="row">11am</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-11" aria-label= "User's Task"></textarea>  
+          <tr class="hour" id= "time-11" data-time= 11>
+            <th class="time-block" scope="row">11am</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>  
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "12"  scope="row">12pm</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-12" aria-label= "User's Task"></textarea>
+          <tr class="hour" id= "time-12" data-time= 12>
+            <th class="time-block" scope="row">12pm</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "13" scope="row">1pm</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-13" aria-label= "User's Task"></textarea>
+          <tr class="hour" id= "time-13" data-time= 13>
+            <th class="time-block" scope="row">1pm</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "14" scope="row">2pm</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-14" aria-label= "User's Task"></textarea>
+          <tr class="hour" id= "time-14" data-time= 14>
+            <th class="time-block" scope="row">2pm</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "15" scope="row">3pm</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-15" aria-label= "User's Task"></textarea>
+          <tr class="hour" id= "time-15" data-time= 15>
+            <th class="time-block" scope="row">3pm</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "16" scope="row">4pm</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-16" aria-label= "User's Task"></textarea>  
+          <tr class="hour" id= "time-16" data-time= 16>
+            <th class="time-block" scope="row">4pm</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>  
             </td>
             <td>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
             </td>
           </tr>
-          <tr>
-            <th data-time= "17" scope="row">5pm</th>
-            <td>
-              <textarea type="text" class="form-control" id= "time-17" aria-label= "User's Task"></textarea>
+          <tr class="hour" id= "time-17" data-time= 17>
+            <th class="time-block" scope="row">5pm</th>
+            <td class="">
+              <textarea type="text" class="form-control"></textarea>
             </td>
             <td>
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
+                <button class="btn btn-outline-secondary saveBtn" type="button" id="button-addon2"><i class="far fa-save fa-lg"></i></button>
               </div>
             </td>
           </tr>
