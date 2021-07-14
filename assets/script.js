@@ -19,26 +19,30 @@ function setTime() {
 // get current time in 24 hour format
     var currentTime = moment().hours();
 
+
 //change time to integer, get data-time attribute 
     $( "textarea").each(function() {
-      var taskTime = parseInt($(this.parent).data("time"));
-console.log(taskTime);
+      var taskTime = parseInt($(this).parent().parent().data("time"));
+
 
     if (currentTime === taskTime) { 
         $(this).addClass("present");
 
     } else if (currentTime < taskTime) {
  
-        $(this).addClass("past");
+        $(this).addClass("future");
 
     } else if (currentTime > taskTime) {
 
-    $(this).addClass("future");
+    $(this).addClass("past");
     }});
-
-// $( "textarea" ).each(function() {
-//   $(this).css("backgroundColor", "blue");
-//   });
 
   }
 displayColors();
+
+
+$(".saveBtn").on("click", function(){
+  console.log($(this));
+
+
+})
