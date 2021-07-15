@@ -12,4 +12,4 @@ As a user, when you open the daily planner to create a schedule you should be ab
 
 Deployed Page: https://aubrihenley.github.io/work-day-scheduler/
 
-Format: ![Scheduler Screenshot]https:(//github.com/aubrihenley/work-day-scheduler/blob/main/assets/Work%20Scheduler.png)
+Format: ![Scheduler Screenshot](https://github.com/aubrihenley/work-day-scheduler/blob/main/assets/Work%20Scheduler.png)
