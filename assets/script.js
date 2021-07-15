@@ -19,7 +19,6 @@ function setTime() {
 // get current time in 24 hour format
     var currentTime = moment().hours();
 
-
 //change time to integer, get data-time attribute 
     $( "textarea").each(function() {
       var taskTime = parseInt($(this).parent().parent().data("time"));
@@ -42,7 +41,10 @@ displayColors();
 
 
 $(".saveBtn").on("click", function(){
-  console.log($(this));
+  $( "textarea").each()
+ 
+ 
+  console.log($(this).parent().parent().data("time"));
 
 
 })

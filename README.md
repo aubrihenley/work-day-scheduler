@@ -10,5 +10,6 @@ As a user, when you open the daily planner to create a schedule you should be ab
 -when clicking the save button for a specific timeblock the event is saved in local storage
 -when the page is refreshed, the saved events persist
 
-Deployed Page:
+Deployed Page: https://aubrihenley.github.io/work-day-scheduler/
+
 
