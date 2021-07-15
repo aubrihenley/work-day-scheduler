@@ -40,11 +40,23 @@ function setTime() {
 displayColors();
 
 
-$(".saveBtn").on("click", function(){
-  $( "textarea").each()
- 
- 
-  console.log($(this).parent().parent().data("time"));
 
+// This function will save the given text to the local storage
+$(".saveBtn").on("click", saveTask)
 
-})
+  function saveTask() {
+
+    var time = $(this).parent().parent().data("time");
+    var task = $(this).parent().siblings(".form-control").val();
+
+    localStorage.setItem(time, task);
+
+    $("textarea").each(function () {
+      var id = $(this).parent().parent().data("time");
+      var task = localStorage.getItem(id);
+    
+      if (task !== null) {
+        $(this).children(".form-control").val(task);
+      }
+    })
+  };
